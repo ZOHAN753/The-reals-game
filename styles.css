@@ -1,52 +1,108 @@
-body{
+/* Estilos base */
+body {
     padding: 0;
     margin: 0;
     background-color: #061421;
-    
 }
-a{
+
+a {
     list-style: none;
 }
-.menu{
+
+.menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#5e0813;
+    background-color: #5e0813;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
-.menu_link{
-    color:#f4b315;
+.menu_link {
+    color: #f4b315;
     font-size: 23px;
     text-decoration: none;
     margin-right: 20px;
     text-shadow: #000000 0 10px 10px;
 }
-.menu_link:after{
+
+.menu_link:after {
     content: " ";
     width: 0;
-    background-color: red ;
+    background-color: red;
     display: block;
     height: 3px;
     transition: width 0.3s ease;
 }
-.menu_link:hover::after{
+
+.menu_link:hover::after {
     width: 100%;
 }
-span{
-    color: white ;
+
+span {
+    color: white;
 }
-h1{
+
+h1 {
     font-size: 25px;
-    color:#f4b315;
+    color: #f4b315;
     text-shadow: #000000 0 10px 10px;
 }
-.caja{
-  color: white;  
-  background-color: #061421;  
-  border: 3px solid #c00505;   
-  padding: 30px;               
-  margin: 20px 0;             
-  border-radius: 10px;         
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  font-family: Arial, sans-serif; 
+
+.caja {
+    color: white;
+    background-color: #061421;
+    border: 3px solid #c00505;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.container, .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 992px) {
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu_link {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .navbar-nav {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .card-body img {
+        margin: 5px auto;
+        display: inline-block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.card-body img {
+    width: 100%;
+    max-width: 250px;
+    margin: 7px auto;
+    display: inline-block;
 }
