@@ -11,7 +11,9 @@ body {
 
 
 }
-
+.carousel{
+align-self: center;
+}
 a {
     list-style: none;
 }
