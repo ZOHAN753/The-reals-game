@@ -185,3 +185,17 @@ img {
 .footer-links li a:hover {
   color: #fff;
 }
+
+.img-zoom {
+  transition: transform 0.5s ease;
+}
+.img-zoom:hover {
+  transform: scale(1.1);
+}
+@font-face{
+  font-family: 'pixel-font';
+  src: url('assets/8bitOperatorPlusSC-Bold.ttf') format('truetype');
+  
+}
+   .pixel-font {
+  font-family: 'Pixel-Font', monospace;}
